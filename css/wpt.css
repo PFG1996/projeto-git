@@ -1,0 +1,395 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../font/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../font/Open_Sans/OpenSans-Light.ttf");
+	font-size: 1em;
+}
+header {
+	width: 100%;
+	height: 250px;
+	background-color: #ff8000;
+	z-index: 2;
+	position: relative;
+}
+
+header .container {
+	position: relative;
+}
+header .header-marcas {
+	background-color: #fff;
+	height: 70px;	
+}
+header .header-marcas li{
+	background-image: url("../img/carros.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: -50px;
+	margin-right: -100px; 
+}
+
+header .header-marcas li.marca-01 {
+	background-position: -0px 0px;
+}
+header .header-marcas li.marca-02 {
+	background-position: -96px 0px;
+}
+header .header-marcas li.marca-03 {
+	background-position: -289px 0px;
+}
+header .header-marcas li.marca-04 {
+	background-position: -380px 0px;
+}
+header .header-marcas li.marca-05 {
+	background-position: -471px 0px;
+}
+header .header-marcas li.marca-06 {
+	background-position: -560px 0px;
+}
+header .header-marcas li.marca-07 {
+	background-position: -658px 0px;
+}
+header .header-marcas li.marca-08 {
+	background-position: -758px 0px;
+}
+header .header-marcas li.marca-09 {
+	background-position: -865px 0px;
+}
+
+header .header-marcas li a {
+	width: 32px;
+	height: 32px;
+	display: block;
+}
+header #logotipo {
+	position: absolute;
+	left: -60px;
+	top: 60px;
+	z-index: 3;
+}
+#banner h1.efeito {
+	color: #fff;
+	font-size: 7em;
+}
+#menu {
+	margin: 70px 0; /* Margem alterada de 26 para 12px.*/
+}
+
+#menu li {
+	display: inline-block;
+	font-family: "OpenSans";
+}
+
+#menu li.search {
+	width: 182px;
+	transition-timing-function: cubic-bezier(1,-.91,.91,1);
+	transition-duration: 1s;
+}
+#menu li.search.ativo {
+	width: 300px;
+}
+#menu li.search input {
+	background-color: #fff;
+	color: #000000;
+	border: none;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 8px;
+}
+#menu li.search ::-webkit-input-placeholder {
+	color: #000000;
+}
+#menu li.search button {
+	background:none;
+	border: none;
+	position: absolute;
+	right: 3px;
+	top: 7px;	
+}
+#menu li.search button i {
+	font-size: 14px;
+	color: #000000;
+}
+#menu li a {
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 25px;
+	font-weight: bold;
+}
+#menu li.search .input-group {
+	top: 8px;
+}
+#banner {
+	width: 100%;
+	height: 728px;
+	position: relative;
+	background: url("../img/banner.jpg") no-repeat;
+	background-position: 0px -300px;
+	top: -110px; 
+	background-size: cover;
+}
+#banner h1 {
+	transition: 1s;
+	color: #ff8000;
+	top: 250px;
+	position: relative;
+	font-size: 65px;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
+	font-family: 'OpenSans-Light';
+	margin-left: 50px;
+	font-weight: bold;
+
+}
+#banner h1 small{
+	font-size: 32px;
+	display: block;
+	color: #FFF;
+	font-family: 'OpenSans';
+	font-weight: bold;
+}
+#noticias {
+	position: relative;
+	top: -110px;
+}
+
+#noticias h2 {
+	color: #ff8000;
+	font-family: 'OpenSans-Light';
+	font-size: 48px;
+	text-align: center;
+	
+}
+#noticias hr {
+	border: #ff8000 solid 2px;
+	width: 200px;
+	margin: 0 auto; 
+}
+#noticias .thumbnails {
+	margin-top: 20px;
+}
+#noticias .thumbnails h3 {
+	color: #000000;
+	font-size: 18px;
+	font-family: 'OpenSans';
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+#noticias .thumbnails time {
+	color: #A7A7A7;
+	font-size: 18px;
+	font-family: 'OpenSans';
+}
+#noticias .thumbnails .item-inner {
+	padding: 10px;
+}
+#noticias .thumbnails .item-inner img {
+	width: 105%;
+}
+#faixa {
+	background-color: #ff8000;
+	width: 100%;
+	height: 200px;
+	text-align: center;
+}
+#faixa p {
+	color: #000000;
+
+	font-family: 'OpenSans-Light';
+	font-size: 64px;
+	margin-top: 36px;
+}
+#faixa p small {
+	color: #fff;
+	font-size: 24px;
+	display: block;
+}
+#anuncios-vendas {
+	text-align: center;
+	margin-top: 105px;
+}
+#anuncios-vendas video{
+	margin-left: -40px;
+}
+#anuncios-vendas h4 {
+	margin-top: -100px;
+	color: #ff8000;
+	font-family: 'OpenSans-Light';
+	font-size: 48px;
+	text-align: center;
+}
+
+#anuncios-vendas img{
+	margin-top: -150px;
+	margin-bottom: -180px;
+
+}
+#anuncios-vendas h2 {
+	color: #ff8000;
+	font-family: 'OpenSans-Light';
+	font-size: 48px;
+	text-align: center;
+
+ 
+}
+
+#anuncios-vendas hr {
+	border: #ff8000 solid 2px;
+	width: 200px;
+	margin: 0 auto;
+}
+#anuncios-vendas p {
+	font-size: 18px;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	color: #000000;
+	font-weight: bold;
+}
+
+
+#anuncios-vendas .row-max-400 {
+	margin: 0 auto;
+	max-width: 400px;
+}
+footer {
+	margin-top: 110px;
+}
+footer .row {
+	width: 100%;
+	margin-left: 0px; /* A margin-left de 0px ajusta o
+						rodapé no seu posicionamento. */
+}
+footer .row p {
+	line-height: 55px; /* 55 ou 60 */
+	margin-bottom: 0;
+}
+footer .row-laranja {
+	height: 200px;
+	background-color: #ff8000;
+}
+footer .row-preto {
+	height: 60px;
+	background-color: #000000;
+	border-top: #242D37 1px solid;
+}
+footer .pull-left {
+	margin-top: 15px;
+	font-family: 'OpenSans';
+	font-size: 14px;
+	color: #ff8000;
+}
+footer .text-des {
+	margin-top: 15px;
+	color: #ff8000;
+	font-family: 'OpenSans';
+	font-weight: bold;
+	font-size: 14px;
+}
+footer .logotipo {
+	margin-left: -100px;
+	margin-top: 5px;
+}
+footer .col-popular-post,
+footer .col-links,
+footer .col-get-in-touch {
+	margin-top: 10px; /*   */
+}
+footer .row-cols h4 {
+	font-family: 'OpenSans';
+	font-size: 16px;
+	color: #000000;
+	padding-bottom: 17px;
+	border-bottom: #242D37 1px solid;
+	font-weight: bold;
+}
+footer .row-cols h5 {
+	color: #000000;
+	font-family: 'Arial';
+	font-size: 14px;
+	margin-bottom: 0;
+}
+footer .row-cols time {
+	color: #FDE092;
+	font-family: Arial;
+	font-size: 14px;
+}
+footer .col-links a {
+	color:#FFF;
+	font-family: Arial;
+	font-size: 14px;
+}
+footer .col-links .fa {
+	margin: 0 6px;
+}
+footer .col-get-in-touch address {
+	color: #fff;
+	font-family: Arial;
+	font-size: 14px;
+	margin-bottom: 6px;
+}
+footer .col-get-in-touch address span {
+	display: inline-block;
+}
+footer .col-get-in-touch address i {
+	position: relative;
+	top: -14px;
+	color: #000000
+}
+footer .col-get-in-touch i {
+	font-size: 20px;
+	margin: 0 6px;
+	color: #000000
+}
+footer .col-get-in-touch a {
+	color: #fff;
+}
+footer .col-get-in-touch p {
+	line-height: 20px;
+	color: #fff
+}
+footer .list-socials {
+	margin-top: 20px;
+}
+footer .list-socials li {
+	display: inline-block;
+	margin-right: 8px;
+}
+footer .list-socials a {
+	display: block;
+	border: #9B9B9B 1px solid;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 14px;
+	text-align: center;	
+}
+footer .list-socials i {
+	font-size: 16px;
+	margin: 7px auto;
+	color: #000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,123 @@
+header {
+	width: 100%;
+	height: 250px;
+	background-color: #ff8000;
+	z-index: 2;
+	position: relative;
+}
+
+header .container {
+	position: relative;
+}
+header .header-marcas {
+	background-color: #fff;
+	height: 70px;	
+}
+header .header-marcas li{
+	background-image: url("../img/carros.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: -50px;
+	margin-right: -100px; 
+}
+
+header .header-marcas li.marca-01 {
+	background-position: -0px 0px;
+}
+header .header-marcas li.marca-02 {
+	background-position: -96px 0px;
+}
+header .header-marcas li.marca-03 {
+	background-position: -289px 0px;
+}
+header .header-marcas li.marca-04 {
+	background-position: -380px 0px;
+}
+header .header-marcas li.marca-05 {
+	background-position: -471px 0px;
+}
+header .header-marcas li.marca-06 {
+	background-position: -560px 0px;
+}
+header .header-marcas li.marca-07 {
+	background-position: -658px 0px;
+}
+header .header-marcas li.marca-08 {
+	background-position: -758px 0px;
+}
+header .header-marcas li.marca-09 {
+	background-position: -865px 0px;
+}
+
+header .header-marcas li a {
+	width: 32px;
+	height: 32px;
+	display: block;
+}
+
+header {
+	width: 100%;
+	height: 250px;
+	background-color: #ff8000;
+	z-index: 2;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+header #logotipo {
+	position: absolute;
+	left: -85px;
+	top: 60px;
+	z-index: 3;
+}
+
+#menu {
+    margin: 70px 0; 
+    margin-left: 500px;
+}
+
+#menu li {
+	display: inline-block;
+	font-family: "OpenSans";
+}
+
+#menu li.search {
+	width: 182px;
+	transition-timing-function: cubic-bezier(1,-.91,.91,1);
+	transition-duration: 1s;
+}
+#menu li.search.ativo {
+	width: 300px;
+}
+#menu li.search input {
+	background-color: #fff;
+	color: #000000;
+	border: none;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 8px;
+}
+#menu li.search ::-webkit-input-placeholder {
+	color: #000000;
+}
+#menu li.search button {
+	background:none;
+	border: none;
+	position: absolute;
+	right: 3px;
+	top: 7px;	
+}
+#menu li.search button i {
+	font-size: 14px;
+	color: #000000;
+}
+#menu li a {
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 25px;
+	font-weight: bold;
+}
+#menu li.search .input-group {
+	top: 8px;
+}
