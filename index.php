@@ -21,13 +21,13 @@
 				<h1>Seu site de informações sobre carros<small>Veículos, Catalogo de Vendas, Vídeos e muito mais</small></h1>
 			</div>	
 
-			<div id="veiculos" class="container">
+			<div id="noticias" class="container">
 				<div class="row text-center">
 				    </br>
 				    </br>
 				    </br>
 				    </br>
-					<h2>Veículos</h2>
+					<h2>Notícias</h2>
 					<hr>
 				</div>
 
