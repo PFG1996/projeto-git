@@ -151,6 +151,20 @@ header #logotipo {
 	font-family: 'OpenSans';
 	font-weight: bold;
 }
+
+#call-to-action {
+	text-align: center;
+	margin-top: 105px;
+}
+
+#call-to-action h4 {
+	margin-top: -100px;
+	color: #ff8000;
+	font-family: 'OpenSans-Light';
+	font-size: 48px;
+	text-align: center;
+}
+
 #noticias {
 	position: relative;
 	top: -110px;
@@ -249,11 +263,12 @@ header #logotipo {
 	font-weight: bold;
 }
 
-
 #anuncios-vendas .row-max-400 {
 	margin: 0 auto;
 	max-width: 400px;
 }
+
+
 footer {
 	margin-top: 110px;
 }

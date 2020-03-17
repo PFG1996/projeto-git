@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/wpt.css">
 	</head>
 	<body>
+
 		<header>
 
 		<?php include_once('includes/header.php'); ?>
@@ -24,21 +25,7 @@
 		<div id="call-to-action">
 			<div class="container">
 				<div class="row text-center">
-					<h4>Quem somos</h4>
-					<hr>
-					<img src="img/logo1.png">
-				</div>
-				<div class="row">
-					<p>Nós da WPTCAR, desenvolvemos um site voltado a fornecer informações do mundo automotivo, com a finalidade de facilitar na hora de escolher um melhor veículo para atender as suas necessidades, sempre buscando informações atualizadas e confiáveis para nossos leitores.
-
-                    </br>
-                    </br>
-
-                    Prezamos pela transparência desde a  sua fundação. O tratamento justo e idôneo, em todas as relações, seja, com seus leitores, funcionários, concorrentes e a comunidade.</p>
-				</div>
-
-				
-					</div>
+					<img src="img/img.png">
 				</div>
 			</div>
 		</div>
