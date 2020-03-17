@@ -11,8 +11,10 @@
 	</head>
 	<body>
 		<header>
-			
-		<?php include_once('includes/header.php'); ?>
+		
+		<?php
+		// header
+		include_once('includes/header.php'); ?>
 	
 		</header>
 
