@@ -21,64 +21,29 @@ if (isset($_POST['cadastrar'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <title>Cadastro de Veículos</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/cat.css">
-</head>
-<body>
+<html>
+	<head>	 
+		<meta charset="utf-8">
+		<title>WPTCAR - Catalogo</title>
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="lib/owl.carousel/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/wpt.css">
+		
+	</head>
+	<body>
+		<header>
+			
+		<?php include_once('includes/header.php'); ?>
+	
+		</header>
 
-<header>
-<div class="container">
-				<img id="logotipo" src="img/logo.png" alt="Logotipo">	
-			</div>
+		<section>
+			<div id="banner">
+				<h1>Cadastre aqui seus carros para venda<small>de forma totalmente gratuita</small></h1>
+			</div>	
 
-			<div class="header-marcas"> 
-				<div class="container">
-					<ul class="pull-right">
-			<li class="marca-01"><a href="https://carros.peugeot.com.br/" target="_blank"></a></li>
-			<li class="marca-02"><a href="https://www.fiat.com.br/" target="_blank"></a></li>
-			<li class="marca-03"><a href="https://www.mitsubishimotors.com.br/" target="_blank"></a></li>
-			<li class="marca-04"><a href="https://www.tesla.com/" target="_blank"></a></li>
-			<li class="marca-05"><a href="https://www.citroen.com.br/" target="_blank"></a></li>
-			<li class="marca-06"><a href="https://www.vw.com.br" target="_blank"></a></li>
-			<li class="marca-07"><a href="https://www.toyota.com.br/" target="_blank"></a></li>
-			<li class="marca-08"><a href="https://www.renault.com.br/" target="_blank"></a></li>
-			<li class="marca-09"><a href="https://www.hyundai.com.br/" target="_blank"></a></li>	
-					</ul>
-				</div>	
-			</div>
-
-			<div class="container">
-				<div class="row">
-					<nav id="menu" class="pull-right">
-						<ul>
-							<li><a href="index.php">Inicio</a></li>
-							<li><a href="videos.php">Videos</a></li>
-							<li><a href="catalogo.php">Catalogo de Veículos</a></li>
-							<li><a href="sobre.php">Quem Somos</a></li> <!--target="_blank"  /  para abrir em nova janela-->
-							<!--<li class="search">
-								<div class="input-group">
-								<input type="search" placeholder="search">
-								<span class="input-group-btn">
-								<button type="button"><i class="fa fa-search"></i></button>
-								</span> 
-								</div>
-							</li>-->
-
-						</ul>
-					</nav>	
-				</div>	
-			</div>
-</header>
-	<div class="container">		
+			<div class="container">		
 		<div class="row">
 		   <div class="col-sm-12 col-md-6 col-lg-6">
 				<h2>Lista de veículos</h2>			
@@ -177,6 +142,32 @@ if (isset($_POST['cadastrar'])) {
 			</tbody>
 		</table>
 	</div>
-	
-</body>
-</html>
+
+		<footer>
+			
+		<?php include_once('includes/footer.php'); ?>
+
+		</footer>
+		
+		<script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#logotipo").on("mouseover",function(){
+					$("#banner h1").addClass("efeito");
+				}).on("mouseout",function(){
+					$("#banner h1").removeClass("efeito");
+				});	
+				$("#input-search").on("focus",function(){
+					$("li.search").addClass("ativo");
+				}).on("blur",function(){
+					$("li.search").removeClass("ativo");
+				}); 
+				$(".thumbnails").owlCarousel({
+					item : 4
+				});		
+			});
+		</script>
+	</body>
+</html>	
